@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
+	<title>Formulario</title>
+
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+	<header class="container">
+		<nav class="navbar navbar-static-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-fc">
+						<span class="sr-only">Desplegar/ocultar menu</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand">Fundacion niño y cancer</a>
+				</div>
+				<!--inicia menu-->
+				<div class="collapse navbar-collapse" id="navegacion-fc"> 
+					<ul class="nav navbar-nav">
+						<li class="active"> <a href="#">Inicio</a></li>
+						<li> <a href="../public/noticias.html">Noticias</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+								Formas de Donar <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Siendo Socio</a></li>
+								<li><a href="#">Depositando</a></li>
+								<li><a href="#">Mediante LLamada Inter.</a></li>
+								<li><a href="#">alcancias</a></li>
+								<li><a href="#">coronas de caridad</a></li>
+								<li><a href="#">Empresas/Particulares</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="../public/nosotros.html" class="list-group-item active" class="dropdown-toggle" data-toggle="dropdown" role="button">
+								Nosotros<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Nuestros Objetivos</a></li>
+								<li><a href="#">Consejo General</a></li>
+								<li><a href="#">Comite Ejecutivo</a></li>
+								<li><a href="#">Directorio Ejecutivo</a></li>
+								<li><a href="#">Administracion</a></li>
+								<li><a href="#">Voluntariado Administrativo</a></li>
+								<li><a href="#"class="list-group-item active">Formulario Postulacion</a></li>
+							</ul>
+						</li>
+					</ul>
+					<form action=""class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="buscar">
+						</div>
+						<button type="submit" class="btn btn-primary">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="container">	 
+		<form>
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="inputEmail4">Nombres</label>
+					<input type="email" class="form-control" id="inputEmail4" placeholder="Nombres">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="inputPassword4">Apellidos</label>
+					<input type="password" class="form-control" id="inputPasword4" placeholder="Apellidos">
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="inputEmail4">Email</label>
+					<input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="inputPassword4">Rut:</label>
+					<input type="password" class="form-control" id="inputPassword4" placeholder="Ej:19.184.792-k">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputAddress">Direccion</label>
+				<input type="text" class="form-control" id="inputAddress" placeholder="Ej: Av Siempre Viva #28">
+			</div>
+			<div class="form-group">
+				<label for="inputAddress2">Especificacion</label>
+				<input type="text" class="form-control" id="inputAddress2" placeholder="Piso,Villa,Poblacion">
+			</div>
+			<div class="form-group">
+    <label for="exampleFormControlTextarea1">Experiencia Laboral</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escriba aqui"></textarea>
+  </div>
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="inputCity">Ciudad</label>
+					<input type="text" class="form-control" id="inputCity">
+				</div>
+				<div class="form-group col-md-4">
+					<label for="inputState">region</label>
+					<select id="inputState" class="form-control">
+						<option selected>Choose...</option>
+						<option>...</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" id="gridCheck">
+					<label class="form-check-label" for="gridCheck">
+						Mujer
+					</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" id="gridCheck">
+					<label class="form-check-label" for="gridCheck">
+						hombre
+					</label>
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary">Enviar</button>
+		</form>
+	</div>
+</body>
+</html>

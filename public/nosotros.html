@@ -10,73 +10,160 @@
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="css/app.css">
-	
-	
 </head>
-<body>
-	<ul>
+<body class="container">
+	<header>
+		<div class="container">
+			<nav class="navbar navbar-static-top" role="navigation">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-fc">
+							<span class="sr-only">Desplegar/ocultar menu</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="#" class="navbar-brand">Fundacion niño y cancer</a>
+					</div>
+					<!--inicia menu-->
+					<div class="collapse navbar-collapse" id="navegacion-fc"> 
+						<ul class="nav navbar-nav">
+							<li class="active"> <a href="../public/index.html">Inicio</a></li>
+							<li> <a href="../public/noticias.html">Noticias</a></li>
+							<li> <a href="#">contacto</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+									Formas de Donar <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">Siendo Socio</a></li>
+									<li><a href="#">Depositando</a></li>
+									<li><a href="#">Mediante LLamada Inter.</a></li>
+									<li><a href="#">alcancias</a></li>
+									<li><a href="#">coronas de caridad</a></li>
+									<li><a href="#">Empresas/Particulares</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="list-group-item active" class="dropdown-toggle" data-toggle="dropdown" role="button">
+									Nosotros<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#" class="list-group-item active">Nuestros Objetivos</a></li>
+									<li><a href="#">Consejo General</a></li>
+									<li><a href="#">Comite Ejecutivo</a></li>
+									<li><a href="#">Directorio Ejecutivo</a></li>
+									<li><a href="#">Administracion</a></li>
+									<li><a href="#">Voluntariado Administrativo</a></li>
+									<li><a href="../public/formulario.html">Formulario Postulacion</a></li>
+								</ul>
+							</li>
+						</ul>
+						<form action=""class="navbar-form navbar-right" role="search">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="buscar">
+							</div>
+							<button type="submit" class="btn btn-primary">
+								<span class="glyphicon glyphicon-search"></span>
+							</button>
+						</form>
+					</div>
+			</nav>
+		</div>
+		<div class="container  text-center">
+			<h1 class="titulo">Nuestros Objetivos</h1>
+			<p>La Fundación Niño y Cáncer es una entidad sin fines de lucro que nació para ser un importante apoyo en el tratamiento integral de los niños con cáncer o leucemia atendidos en el Sistema Público del país (Plan AUGE y GES) mejorando su calidad de vida y fortaleciendo su integración social y familiar.
+			La fundación está convencida que para derrotar el cáncer no sólo hay que preocuparse de curar el cuerpo de los pacientes. El espíritu también se ve afectado y para salir adelante es esencial querer curarse. Por esta razón, son muy importantes los programas recreativos, los cuales ayudan a superar los sufrimientos y mantener vivo el deseo de curarse.</p>
+			<h3>Necesitamos la colaboración solidaria  de la comunidad, para lograr transformar la cara triste de la enfermedad en una cara feliz con esperanzas para estos pequeños que luchan día a día por su vida.</h3>
+		</div>
+	</header>
+	<div class="container">
+		<div class="main">
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Sus objetivos principales</h2>
+					<ul>
+						<li>Apoyar el tratamiento de la enfermedad</li>
+						<li>Generar espacios de recreacion y mejoramos la calidad de vida de un niño duracte y despues de su tratamiento</li>
+						<li>Rehabilitamos al niño tratado y posteriormente lo integramos a la sociedad (Becas de Estudio)</li>
+						<li>Damos apoyo social y solidario a la familia del niño (Departamentos de Acogida, almuerzo para padres de niños hospitalizados, Cenas de Navidad, etc.)</li>
 
-		<li><img alt="Brand" src="..."></li>
-				
-	
-		<li role="presentation" class="dropdown">
-			<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-				Donar<span class="caret"></span>
-			</a>
-			<ul class="dropdown-menu">
-				...
-			</ul>
-		</li>
-		<li role="presentation" class="dropdown">
-			<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-				Nosotros <span class="caret"></span>
-			</a>
-			<ul class="dropdown-menu">
-				...
-			</ul>
-		</li>
-		<li role="presentation" class="dropdown">
-			<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-				Noticias <span class="caret"></span>
-			</a>
-			<ul class="dropdown-menu">
-				...
-			</ul>
-		</li>
-		<li role="presentation" class="dropdown">
-			<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-				Maneras de ayudar<span class="caret"></span>
-			</a>
-			<ul class="dropdown-menu">
-				...
-			</ul>
-		</li>
-</ul>
-<div class="sidebar">
-	<h3>Acerca de niño y cancer</h3>
-	<ul>
-		<li>Nuestro Equipo</li>
-		<li>Nuestra Historia</li>
-		<li>Porque donar a niño y cancer</li>
-		<li>informacion financiera</li>
-		<li>etica y politica</li>
-		<li>contacto</li>
-	</ul>
-<h1>Sobre nosotros</h1>
-<div class="conteiner">
-	<img src="" alt="">
-	<h2>Mercy Corps es un equipo global de trabajadores humanitarios que se asocia con comunidades, corporaciones y gobiernos para transformar vidas en todo el mundo.</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto incidunt velit tempora, aliquid quas. Porro exercitationem, repellendus, quaerat distinctio perferendis iure voluptas ea eum laborum vero commodi corporis animi, eveniet?</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dicta provident, deserunt nihil ex tenetur at esse ducimus modi repudiandae quia? Sequi expedita vel totam numquam, rerum atque, ut repudiandae?</p>
-	<!-- 16:9 aspect ratio -->
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="..."></iframe>
-</div>
+					</ul>
+					<img src="..public/imagenes/ninos-trineos.png" alt="..." class="img-circle" class="img-responsive" alt="Responsive image" width: 100%;, height: auto;y display: block;>
+					<img src="..public/imagenes/ninos-trineos.png" alt="">
+				</div>
+				<div class="col-md-6">
+					<img src="..public/imagenes/ninos-trineos.png" alt="">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Actividades Principales</h2>
+					<h3>Programas recreacionales con cobertura nacional:</h3>
+					<h3>La fundación está convencida que para derrotar el cáncer no sólo hay que preocuparse de curar el cuerpo de los pacientes. El espíritu también se ve afectado y para salir adelante es esencial querer curarse. Por esta razón, son muy importantes los programas recreativos, los cuales ayudan a superar los sufrimientos y mantener vivo el deseo de curarse.</h3>
+				</div>
+				<div class="col-md-6">
+					<img src="..public/imagenes/ninos-trineos.png" alt="">
+					<img src="..public/imagenes/ninos-trineos.png" alt="">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Montaña de la Alegría- Dividida en dos etapas</h2>
+					<h3>rimera Etapa:	Participan 10 niños/jóvenes,chilenosy extranjeros, amputados de una extremidad inferior como secuela de su enfermedad. El objetivo es demostrarles a los niños/jóvenes participantes que su impedimento físico no los limita para plantearse desafíos como aprender esquiar y con optimismo y fuerza lograran todos los objetivos que se propongan en su vida.</h3>
+					<h3>Segunda Etapa:	
+					Participan aproximadamente 80 niños de todos los hospitales públicos que cuentan con Servicio de Oncología Infantil de todo el país. Tienen actividades organizadas por monitores universitarios, que programan una serie de entretenciones propias de la vida en la montaña, que son motivo de alegría y diversión.</h3>
 
-<!-- 4:3 aspect ratio -->
-<div class="embed-responsive embed-responsive-4by3">
-  <iframe class="embed-responsive-item" src="..."></iframe>
+				</div>
+				<div class="col-md-6">
+					<img src="..public/imagenes/ninos-trineos.png" alt="">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Torneo de Futbolito u Porristas -</h2>
+					<h3>En esta actividad participan los niños tratados de cáncer junto a su familia de los hospitales del área metropolitana. (San Borja Arriaran, Sotero del Río, Exequiel González, Roberto del Río, Calvo Mackenna y San Juan de Dios). Para estos jóvenes y sus familias es un día de fiesta.</h3>
+						<img src="..public/imagenes/ninos-trineos.png" alt="">
+					</div>
+					<div class="col-md-6">
+						<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="..." alt="...">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
+						<img src="..public/imagenes/ninos-trineos.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--agregar direccion y iframe de mapa igual al index
+		ver migas de pan-->
+	<div class="container">
+		
+	</div>
+	<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6">
+				<p>ariana paz-fundacion niño cancer</p>
+			</div>
+			<div class="col-xs-6">
+				<ul class="list-inline text-right">
+					<li><a href="#">contacto</a></li>
+					<li><a href="#">inicio</a></li>
+					<li><a href="#">donar</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
 </body>
 </html>
